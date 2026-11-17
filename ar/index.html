@@ -6,7 +6,7 @@
   <title>زوم دروب — أمسكهم. اقذفهم. اصمد حتى الصباح.</title>
   <meta name="description" content="زوم دروب لعبة جوال من استوديو قمر بت. أمسك الزومبي بإصبعك، اقذفهم، أسقطهم، واحمِ بيتك حتى الصباح. قريباً على Google Play و App Store.">
   <meta name="theme-color" content="#081320">
-  <meta name="version" content="1.11">
+  <meta name="version" content="1.12">
   <link rel="canonical" href="https://zomdrop.com/ar/">
   <link rel="alternate" hreflang="en" href="https://zomdrop.com/">
   <link rel="alternate" hreflang="ar" href="https://zomdrop.com/ar/">
@@ -160,127 +160,45 @@
       <p class="label">الأدوات الخاصة</p>
       <h2 class="title">أسقِط عليهم شيئاً</h2>
       <p class="sub">29 أداة تستدعيها حين لا تكفي الأصابع.</p>
-      <h3 class="subtitle">الأسلحة</h3>
-      <div class="grid arsenal">
-        <article class="t reveal">
-          <img src="../img/tools/gun.png" alt="" width="128" height="128" loading="lazy">
-          <div><h3>مسدس</h3><p>المسدس الذي يُعتمد عليه.</p></div>
-        </article>
-        <article class="t reveal">
-          <img src="../img/tools/shotgun.png" alt="" width="128" height="128" loading="lazy">
-          <div><h3>بندقية خرطوش</h3><p>لا تصوّب، بل تكتسح. كل ما أمامها يُصاب.</p></div>
-        </article>
-        <article class="t reveal">
-          <img src="../img/tools/sniper.png" alt="" width="128" height="128" loading="lazy">
-          <div><h3>بندقية قنص</h3><p>تصويب مثالي وإصابة قاتلة.</p></div>
-        </article>
-        <article class="t reveal">
-          <img src="../img/tools/peacemaker.png" alt="" width="128" height="128" loading="lazy">
-          <div><h3>صانع السلام</h3><p>يجلب السلام، طلقة بعد طلقة.</p></div>
-        </article>
-        <article class="t reveal">
-          <img src="../img/tools/gatling.png" alt="" width="128" height="128" loading="lazy">
-          <div><h3>رشاش دوّار</h3><p>لا حاجة لقول المزيد.</p></div>
-        </article>
-        <article class="t reveal">
-          <img src="../img/tools/rocketlauncher.png" alt="" width="128" height="128" loading="lazy">
-          <div><h3>قاذف صواريخ</h3><p>عالمان في واحد: سلاح يطلق المتفجرات.</p></div>
-        </article>
-        <article class="t reveal">
-          <img src="../img/tools/mine.png" alt="" width="128" height="128" loading="lazy">
-          <div><h3>لغم أرضي</h3><p>يزرع حقل ألغام قاتلًا.</p></div>
-        </article>
-        <article class="t reveal">
-          <img src="../img/tools/grenade.png" alt="" width="128" height="128" loading="lazy">
-          <div><h3>قنبلة يدوية</h3><p>لانفجارات في المكان الذي تريده تمامًا.</p></div>
-        </article>
-        <article class="t reveal">
-          <img src="../img/tools/nitrogen.png" alt="" width="128" height="128" loading="lazy">
-          <div><h3>نيتروجين سائل</h3><p>يجمّد الزومبي تمامًا ويجعلهم يتحطمون كالزجاج.</p></div>
-        </article>
-        <article class="t reveal">
-          <img src="../img/tools/firegrenade.png" alt="" width="128" height="128" loading="lazy">
-          <div><h3>قنبلة حارقة</h3><p>تنفجر وتترك الأرض مشتعلة.</p></div>
-        </article>
+      <p class="tools-hint">المس أي أداة لترى ما تفعله.</p>
+      <div class="chips" role="group" aria-label="الأدوات الخاصة">
+        <button type="button" class="chip on" data-g="all" aria-pressed="true">الكل<i>29</i></button>
+        <button type="button" class="chip" data-g="guns" aria-pressed="false">أسلحة نارية<i>6</i></button>
+        <button type="button" class="chip" data-g="boom" aria-pressed="false">متفجرات ونار وثلج<i>7</i></button>
+        <button type="button" class="chip" data-g="sky" aria-pressed="false">تسقط من السماء<i>9</i></button>
+        <button type="button" class="chip" data-g="gravity" aria-pressed="false">الجاذبية والوقت<i>4</i></button>
+        <button type="button" class="chip" data-g="tricks" aria-pressed="false">حيل<i>3</i></button>
       </div>
-      <h3 class="subtitle">الأدوات الخاصة</h3>
-      <div class="grid arsenal">
-        <article class="t reveal">
-          <img src="../img/tools/rockets.png" alt="" width="128" height="128" loading="lazy">
-          <div><h3>ألعاب نارية</h3><p>كل ليلة مناسبة لألعاب الزومبي النارية.</p></div>
-        </article>
-        <article class="t reveal">
-          <img src="../img/tools/rocks.png" alt="" width="128" height="128" loading="lazy">
-          <div><h3>صخور</h3><p>تدفن الزومبي تحت كومة من الصخور.</p></div>
-        </article>
-        <article class="t reveal">
-          <img src="../img/tools/metalcore.png" alt="" width="128" height="128" loading="lazy">
-          <div><h3>كتلة خرسانية</h3><p>تُخلي المكان أمام المنزل حين يقترب زومبي أكثر من اللازم.</p></div>
-        </article>
-        <article class="t reveal">
-          <img src="../img/tools/wreckingball.png" alt="" width="128" height="128" loading="lazy">
-          <div><h3>كرة الهدم</h3><p>رائعة لهدم الأشياء، والزومبي قبل كل شيء.</p></div>
-        </article>
-        <article class="t reveal">
-          <img src="../img/tools/wreckingshoe.png" alt="" width="128" height="128" loading="lazy">
-          <div><h3>حذاء الهدم</h3><p>ضربة جزاء مؤلمة حقًا! هذا الحذاء يفضّل الزومبي على الكرات!</p></div>
-        </article>
-        <article class="t reveal">
-          <img src="../img/tools/stoneball.png" alt="" width="128" height="128" loading="lazy">
-          <div><h3>صخرة عملاقة</h3><p>كلما كبرت كان أفضل. تدهس كل ما في طريقها.</p></div>
-        </article>
-        <article class="t reveal">
-          <img src="../img/tools/bigball.png" alt="" width="128" height="128" loading="lazy">
-          <div><h3>كرة قدم كبيرة</h3><p>كرة ضخمة تسحق الزومبي.</p></div>
-        </article>
-        <article class="t reveal">
-          <img src="../img/tools/windmill.png" alt="" width="128" height="128" loading="lazy">
-          <div><h3>طاحونة الهواء</h3><p>تحوّل الطاحونة إلى شفرة دوّارة. الزومبي يتقطّعون!</p></div>
-        </article>
-        <article class="t reveal">
-          <img src="../img/tools/meteor_small.png" alt="" width="128" height="128" loading="lazy">
-          <div><h3>نيازك</h3><p>مساعدة من السماء. تُمطر الزومبي بالنار.</p></div>
-        </article>
-        <article class="t reveal">
-          <img src="../img/tools/meteor.png" alt="" width="128" height="128" loading="lazy">
-          <div><h3>كويكب</h3><p>اسأل الديناصورات كيف تنتهي القصة. الزومبي هم التالون.</p></div>
-        </article>
-        <article class="t reveal">
-          <img src="../img/tools/headbang.png" alt="" width="128" height="128" loading="lazy">
-          <div><h3>انفجار الرأس</h3><p>إلى أي حد يتمدد رأس الزومبي قبل أن ينفجر؟</p></div>
-        </article>
-        <article class="t reveal">
-          <img src="../img/tools/chimneyfire.png" alt="" width="128" height="128" loading="lazy">
-          <div><h3>نار المدخنة</h3><p>أشعِلهم! الزومبي المحترق يجعل القدرات الخاصة تظهر أكثر.</p></div>
-        </article>
-        <article class="t reveal">
-          <img src="../img/tools/gravitylow.png" alt="" width="128" height="128" loading="lazy">
-          <div><h3>جاذبية منخفضة</h3><p>تخفض الجاذبية. تلميح: في الجاذبية المنخفضة يمكن إمساك حتى الضخم.</p></div>
-        </article>
-        <article class="t reveal">
-          <img src="../img/tools/gravityhigh.png" alt="" width="128" height="128" loading="lazy">
-          <div><h3>جاذبية عالية</h3><p>ترفع الجاذبية. يصبح كسر العظام أسهل.</p></div>
-        </article>
-        <article class="t reveal">
-          <img src="../img/tools/gravityanti.png" alt="" width="128" height="128" loading="lazy">
-          <div><h3>انعدام الجاذبية</h3><p>يطفو الزومبي كأنهم في الفضاء، حتى يسقطوا وتتكسر عظامهم.</p></div>
-        </article>
-        <article class="t reveal">
-          <img src="../img/tools/slowmo.png" alt="" width="128" height="128" loading="lazy">
-          <div><h3>حركة بطيئة</h3><p>تبطئ الزمن لتتمكن من التعامل مع المشكلة.</p></div>
-        </article>
-        <article class="t reveal">
-          <img src="../img/tools/whistle.png" alt="" width="128" height="128" loading="lazy">
-          <div><h3>صفارة</h3><p>توقف الزومبي في أماكنهم.</p></div>
-        </article>
-        <article class="t reveal">
-          <img src="../img/tools/horn.png" alt="" width="128" height="128" loading="lazy">
-          <div><h3>بوق المشجعين</h3><p>يدفع الزومبي بعيدًا عن المنزل.</p></div>
-        </article>
-        <article class="t reveal">
-          <img src="../img/tools/powergrab.png" alt="" width="128" height="128" loading="lazy">
-          <div><h3>الإمساك الخارق</h3><p>يمسك الزومبي الثقيل، وعدة زومبي معًا بلمسة واحدة.</p></div>
-        </article>
+      <div class="grid arsenal reveal" data-show="all">
+        <details class="t" data-g="guns"><summary><img src="../img/tools/gun.png" alt="" width="128" height="128" loading="lazy"><b>مسدس</b></summary><div class="td"><p>المسدس الذي يُعتمد عليه.</p></div></details>
+        <details class="t" data-g="guns"><summary><img src="../img/tools/shotgun.png" alt="" width="128" height="128" loading="lazy"><b>بندقية خرطوش</b></summary><div class="td"><p>لا تصوّب، بل تكتسح. كل ما أمامها يُصاب.</p></div></details>
+        <details class="t" data-g="guns"><summary><img src="../img/tools/sniper.png" alt="" width="128" height="128" loading="lazy"><b>بندقية قنص</b></summary><div class="td"><p>تصويب مثالي وإصابة قاتلة.</p></div></details>
+        <details class="t" data-g="guns"><summary><img src="../img/tools/peacemaker.png" alt="" width="128" height="128" loading="lazy"><b>صانع السلام</b></summary><div class="td"><p>يجلب السلام، طلقة بعد طلقة.</p></div></details>
+        <details class="t" data-g="guns"><summary><img src="../img/tools/gatling.png" alt="" width="128" height="128" loading="lazy"><b>رشاش دوّار</b></summary><div class="td"><p>لا حاجة لقول المزيد.</p></div></details>
+        <details class="t" data-g="guns"><summary><img src="../img/tools/rocketlauncher.png" alt="" width="128" height="128" loading="lazy"><b>قاذف صواريخ</b></summary><div class="td"><p>عالمان في واحد: سلاح يطلق المتفجرات.</p></div></details>
+        <details class="t" data-g="boom"><summary><img src="../img/tools/mine.png" alt="" width="128" height="128" loading="lazy"><b>لغم أرضي</b></summary><div class="td"><p>يزرع حقل ألغام قاتلًا.</p></div></details>
+        <details class="t" data-g="boom"><summary><img src="../img/tools/grenade.png" alt="" width="128" height="128" loading="lazy"><b>قنبلة يدوية</b></summary><div class="td"><p>لانفجارات في المكان الذي تريده تمامًا.</p></div></details>
+        <details class="t" data-g="boom"><summary><img src="../img/tools/nitrogen.png" alt="" width="128" height="128" loading="lazy"><b>نيتروجين سائل</b></summary><div class="td"><p>يجمّد الزومبي تمامًا ويجعلهم يتحطمون كالزجاج.</p></div></details>
+        <details class="t" data-g="boom"><summary><img src="../img/tools/firegrenade.png" alt="" width="128" height="128" loading="lazy"><b>قنبلة حارقة</b></summary><div class="td"><p>تنفجر وتترك الأرض مشتعلة.</p></div></details>
+        <details class="t" data-g="boom"><summary><img src="../img/tools/rockets.png" alt="" width="128" height="128" loading="lazy"><b>ألعاب نارية</b></summary><div class="td"><p>كل ليلة مناسبة لألعاب الزومبي النارية.</p></div></details>
+        <details class="t" data-g="boom"><summary><img src="../img/tools/headbang.png" alt="" width="128" height="128" loading="lazy"><b>انفجار الرأس</b></summary><div class="td"><p>إلى أي حد يتمدد رأس الزومبي قبل أن ينفجر؟</p></div></details>
+        <details class="t" data-g="boom"><summary><img src="../img/tools/chimneyfire.png" alt="" width="128" height="128" loading="lazy"><b>نار المدخنة</b></summary><div class="td"><p>أشعِلهم! الزومبي المحترق يجعل القدرات الخاصة تظهر أكثر.</p></div></details>
+        <details class="t" data-g="sky"><summary><img src="../img/tools/rocks.png" alt="" width="128" height="128" loading="lazy"><b>صخور</b></summary><div class="td"><p>تدفن الزومبي تحت كومة من الصخور.</p></div></details>
+        <details class="t" data-g="sky"><summary><img src="../img/tools/metalcore.png" alt="" width="128" height="128" loading="lazy"><b>كتلة خرسانية</b></summary><div class="td"><p>تُخلي المكان أمام المنزل حين يقترب زومبي أكثر من اللازم.</p></div></details>
+        <details class="t" data-g="sky"><summary><img src="../img/tools/wreckingball.png" alt="" width="128" height="128" loading="lazy"><b>كرة الهدم</b></summary><div class="td"><p>رائعة لهدم الأشياء، والزومبي قبل كل شيء.</p></div></details>
+        <details class="t" data-g="sky"><summary><img src="../img/tools/wreckingshoe.png" alt="" width="128" height="128" loading="lazy"><b>حذاء الهدم</b></summary><div class="td"><p>ضربة جزاء مؤلمة حقًا! هذا الحذاء يفضّل الزومبي على الكرات!</p></div></details>
+        <details class="t" data-g="sky"><summary><img src="../img/tools/stoneball.png" alt="" width="128" height="128" loading="lazy"><b>صخرة عملاقة</b></summary><div class="td"><p>كلما كبرت كان أفضل. تدهس كل ما في طريقها.</p></div></details>
+        <details class="t" data-g="sky"><summary><img src="../img/tools/bigball.png" alt="" width="128" height="128" loading="lazy"><b>كرة قدم كبيرة</b></summary><div class="td"><p>كرة ضخمة تسحق الزومبي.</p></div></details>
+        <details class="t" data-g="sky"><summary><img src="../img/tools/windmill.png" alt="" width="128" height="128" loading="lazy"><b>طاحونة الهواء</b></summary><div class="td"><p>تحوّل الطاحونة إلى شفرة دوّارة. الزومبي يتقطّعون!</p></div></details>
+        <details class="t" data-g="sky"><summary><img src="../img/tools/meteor_small.png" alt="" width="128" height="128" loading="lazy"><b>نيازك</b></summary><div class="td"><p>مساعدة من السماء. تُمطر الزومبي بالنار.</p></div></details>
+        <details class="t" data-g="sky"><summary><img src="../img/tools/meteor.png" alt="" width="128" height="128" loading="lazy"><b>كويكب</b></summary><div class="td"><p>اسأل الديناصورات كيف تنتهي القصة. الزومبي هم التالون.</p></div></details>
+        <details class="t" data-g="gravity"><summary><img src="../img/tools/gravitylow.png" alt="" width="128" height="128" loading="lazy"><b>جاذبية منخفضة</b></summary><div class="td"><p>تخفض الجاذبية. تلميح: في الجاذبية المنخفضة يمكن إمساك حتى الضخم.</p></div></details>
+        <details class="t" data-g="gravity"><summary><img src="../img/tools/gravityhigh.png" alt="" width="128" height="128" loading="lazy"><b>جاذبية عالية</b></summary><div class="td"><p>ترفع الجاذبية. يصبح كسر العظام أسهل.</p></div></details>
+        <details class="t" data-g="gravity"><summary><img src="../img/tools/gravityanti.png" alt="" width="128" height="128" loading="lazy"><b>انعدام الجاذبية</b></summary><div class="td"><p>يطفو الزومبي كأنهم في الفضاء، حتى يسقطوا وتتكسر عظامهم.</p></div></details>
+        <details class="t" data-g="gravity"><summary><img src="../img/tools/slowmo.png" alt="" width="128" height="128" loading="lazy"><b>حركة بطيئة</b></summary><div class="td"><p>تبطئ الزمن لتتمكن من التعامل مع المشكلة.</p></div></details>
+        <details class="t" data-g="tricks"><summary><img src="../img/tools/whistle.png" alt="" width="128" height="128" loading="lazy"><b>صفارة</b></summary><div class="td"><p>توقف الزومبي في أماكنهم.</p></div></details>
+        <details class="t" data-g="tricks"><summary><img src="../img/tools/horn.png" alt="" width="128" height="128" loading="lazy"><b>بوق المشجعين</b></summary><div class="td"><p>يدفع الزومبي بعيدًا عن المنزل.</p></div></details>
+        <details class="t" data-g="tricks"><summary><img src="../img/tools/powergrab.png" alt="" width="128" height="128" loading="lazy"><b>الإمساك الخارق</b></summary><div class="td"><p>يمسك الزومبي الثقيل، وعدة زومبي معًا بلمسة واحدة.</p></div></details>
       </div>
       <div class="art art-purple lockedzone">
       <h3 class="subtitle">جوائز سرّية</h3>
@@ -331,7 +249,7 @@
       </p>
       <p><a href="../privacy.html">سياسة الخصوصية</a> <a href="../credits.html">الشكر والتراخيص</a> <a href="mailto:support@zomdrop.com" dir="ltr">support@zomdrop.com</a> <a href="https://qamarbit.com">Qamar Bit</a> <a href="../" lang="en" hreflang="en">English</a></p>
       <p>&copy; 2026 Qamar Bit. جميع الحقوق محفوظة.</p>
-      <p class="ver">إصدار الموقع 1.11</p>
+      <p class="ver">إصدار الموقع 1.12</p>
     </footer>
   </div>
 
@@ -343,6 +261,24 @@
   document.documentElement.classList.add('js');
   if (location.hash) document.documentElement.classList.add('nodrop');
   requestAnimationFrame(function () { requestAnimationFrame(function () { document.documentElement.classList.add('go'); }); });
+  // tools: filter buttons, and only one tool open at a time
+  (function () {
+    var grid = document.querySelector('.arsenal'); if (!grid) return;
+    var chips = document.querySelectorAll('.chip');
+    chips.forEach(function (c) {
+      c.addEventListener('click', function () {
+        chips.forEach(function (x) { var on = x === c; x.classList.toggle('on', on); x.setAttribute('aria-pressed', on ? 'true' : 'false'); });
+        grid.setAttribute('data-show', c.getAttribute('data-g'));
+        grid.querySelectorAll('details[open]').forEach(function (d) { d.open = false; });
+        // a small hop only (no fading), so a tool can never be left invisible
+        if (window.gsap) gsap.fromTo(grid.querySelectorAll('.t'), { y: 8 }, { y: 0, duration: .3, stagger: .02, overwrite: true, clearProps: 'transform' });
+      });
+    });
+    grid.addEventListener('toggle', function (e) {
+      if (!e.target.open) return;
+      grid.querySelectorAll('details[open]').forEach(function (d) { if (d !== e.target) d.open = false; });
+    }, true);
+  })();
   (function () {
     if (!window.gsap || !window.ScrollTrigger) return;   // without GSAP the page simply shows everything
     gsap.registerPlugin(ScrollTrigger);

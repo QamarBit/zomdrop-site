@@ -6,7 +6,7 @@
   <title>ZomDrop — Grab them. Fling them. Survive until morning.</title>
   <meta name="description" content="ZomDrop is a mobile game by Qamar Bit. Grab zombies with your finger, fling them, drop them, and protect your house until morning. Coming soon on Google Play and the App Store.">
   <meta name="theme-color" content="#081320">
-  <meta name="version" content="1.11">
+  <meta name="version" content="1.12">
   <link rel="canonical" href="https://zomdrop.com/">
   <link rel="alternate" hreflang="en" href="https://zomdrop.com/">
   <link rel="alternate" hreflang="ar" href="https://zomdrop.com/ar/">
@@ -160,127 +160,45 @@
       <p class="label">Special tools</p>
       <h2 class="title">Drop something on them</h2>
       <p class="sub">29 things to call in when fingers are not enough.</p>
-      <h3 class="subtitle">Weapons</h3>
-      <div class="grid arsenal">
-        <article class="t reveal">
-          <img src="img/tools/gun.png" alt="" width="128" height="128" loading="lazy">
-          <div><h3>Handgun</h3><p>The trusty handgun.</p></div>
-        </article>
-        <article class="t reveal">
-          <img src="img/tools/shotgun.png" alt="" width="128" height="128" loading="lazy">
-          <div><h3>Shotgun</h3><p>It doesn't aim, it sweeps. Everything in front gets hit.</p></div>
-        </article>
-        <article class="t reveal">
-          <img src="img/tools/sniper.png" alt="" width="128" height="128" loading="lazy">
-          <div><h3>Sniper rifle</h3><p>Perfect aim with a deadly hit.</p></div>
-        </article>
-        <article class="t reveal">
-          <img src="img/tools/peacemaker.png" alt="" width="128" height="128" loading="lazy">
-          <div><h3>Peacemaker</h3><p>Bringing peace, one shot at a time.</p></div>
-        </article>
-        <article class="t reveal">
-          <img src="img/tools/gatling.png" alt="" width="128" height="128" loading="lazy">
-          <div><h3>Gatling gun</h3><p>Nothing more needs to be said.</p></div>
-        </article>
-        <article class="t reveal">
-          <img src="img/tools/rocketlauncher.png" alt="" width="128" height="128" loading="lazy">
-          <div><h3>Rocket launcher</h3><p>Two worlds in one: a gun that fires explosives.</p></div>
-        </article>
-        <article class="t reveal">
-          <img src="img/tools/mine.png" alt="" width="128" height="128" loading="lazy">
-          <div><h3>Landmine</h3><p>Lays a deadly minefield.</p></div>
-        </article>
-        <article class="t reveal">
-          <img src="img/tools/grenade.png" alt="" width="128" height="128" loading="lazy">
-          <div><h3>Hand grenade</h3><p>For explosions exactly where you want them.</p></div>
-        </article>
-        <article class="t reveal">
-          <img src="img/tools/nitrogen.png" alt="" width="128" height="128" loading="lazy">
-          <div><h3>Liquid nitrogen</h3><p>Freezes zombies solid and makes them shatter like glass.</p></div>
-        </article>
-        <article class="t reveal">
-          <img src="img/tools/firegrenade.png" alt="" width="128" height="128" loading="lazy">
-          <div><h3>Fire grenade</h3><p>Blows up and leaves the ground burning.</p></div>
-        </article>
+      <p class="tools-hint">Tap a tool to see what it does.</p>
+      <div class="chips" role="group" aria-label="Special tools">
+        <button type="button" class="chip on" data-g="all" aria-pressed="true">All<i>29</i></button>
+        <button type="button" class="chip" data-g="guns" aria-pressed="false">Guns<i>6</i></button>
+        <button type="button" class="chip" data-g="boom" aria-pressed="false">Explosives, fire &amp; ice<i>7</i></button>
+        <button type="button" class="chip" data-g="sky" aria-pressed="false">From the sky<i>9</i></button>
+        <button type="button" class="chip" data-g="gravity" aria-pressed="false">Gravity &amp; time<i>4</i></button>
+        <button type="button" class="chip" data-g="tricks" aria-pressed="false">Tricks<i>3</i></button>
       </div>
-      <h3 class="subtitle">Specials</h3>
-      <div class="grid arsenal">
-        <article class="t reveal">
-          <img src="img/tools/rockets.png" alt="" width="128" height="128" loading="lazy">
-          <div><h3>Fireworks</h3><p>Any night is a good night for zombie fireworks.</p></div>
-        </article>
-        <article class="t reveal">
-          <img src="img/tools/rocks.png" alt="" width="128" height="128" loading="lazy">
-          <div><h3>Rocks</h3><p>Buries zombies under a pile of rocks.</p></div>
-        </article>
-        <article class="t reveal">
-          <img src="img/tools/metalcore.png" alt="" width="128" height="128" loading="lazy">
-          <div><h3>Concrete block</h3><p>Clears the space in front of the house when a zombie gets too close.</p></div>
-        </article>
-        <article class="t reveal">
-          <img src="img/tools/wreckingball.png" alt="" width="128" height="128" loading="lazy">
-          <div><h3>Wrecking ball</h3><p>Great for knocking things down. Zombies most of all.</p></div>
-        </article>
-        <article class="t reveal">
-          <img src="img/tools/wreckingshoe.png" alt="" width="128" height="128" loading="lazy">
-          <div><h3>Wrecking shoe</h3><p>A penalty kick that really hurts! This boot prefers zombies to balls!</p></div>
-        </article>
-        <article class="t reveal">
-          <img src="img/tools/stoneball.png" alt="" width="128" height="128" loading="lazy">
-          <div><h3>Giant boulder</h3><p>The bigger the better. Rolls over anything in its path.</p></div>
-        </article>
-        <article class="t reveal">
-          <img src="img/tools/bigball.png" alt="" width="128" height="128" loading="lazy">
-          <div><h3>Big football</h3><p>A huge ball that flattens zombies.</p></div>
-        </article>
-        <article class="t reveal">
-          <img src="img/tools/windmill.png" alt="" width="128" height="128" loading="lazy">
-          <div><h3>Windmill</h3><p>Turns the windmill into a spinning blade. Zombies get sliced!</p></div>
-        </article>
-        <article class="t reveal">
-          <img src="img/tools/meteor_small.png" alt="" width="128" height="128" loading="lazy">
-          <div><h3>Meteorites</h3><p>Help from the sky. Pours fire on zombies.</p></div>
-        </article>
-        <article class="t reveal">
-          <img src="img/tools/meteor.png" alt="" width="128" height="128" loading="lazy">
-          <div><h3>Asteroid</h3><p>Ask the dinosaurs how this one ends. The zombies are next.</p></div>
-        </article>
-        <article class="t reveal">
-          <img src="img/tools/headbang.png" alt="" width="128" height="128" loading="lazy">
-          <div><h3>Head Bang</h3><p>How far can a zombie head stretch before it pops?</p></div>
-        </article>
-        <article class="t reveal">
-          <img src="img/tools/chimneyfire.png" alt="" width="128" height="128" loading="lazy">
-          <div><h3>Chimney fire</h3><p>Light them up! A burning zombie makes specials show up more often.</p></div>
-        </article>
-        <article class="t reveal">
-          <img src="img/tools/gravitylow.png" alt="" width="128" height="128" loading="lazy">
-          <div><h3>Low gravity</h3><p>Turns gravity down. Tip: in low gravity even the Tank can be grabbed.</p></div>
-        </article>
-        <article class="t reveal">
-          <img src="img/tools/gravityhigh.png" alt="" width="128" height="128" loading="lazy">
-          <div><h3>High gravity</h3><p>Turns gravity up. Breaking bones gets easier.</p></div>
-        </article>
-        <article class="t reveal">
-          <img src="img/tools/gravityanti.png" alt="" width="128" height="128" loading="lazy">
-          <div><h3>Zero gravity</h3><p>Zombies float like they're in space. Until they come down and their bones break.</p></div>
-        </article>
-        <article class="t reveal">
-          <img src="img/tools/slowmo.png" alt="" width="128" height="128" loading="lazy">
-          <div><h3>Slow motion</h3><p>Slows time down so you can handle the trouble.</p></div>
-        </article>
-        <article class="t reveal">
-          <img src="img/tools/whistle.png" alt="" width="128" height="128" loading="lazy">
-          <div><h3>Whistle</h3><p>Stops zombies in their tracks.</p></div>
-        </article>
-        <article class="t reveal">
-          <img src="img/tools/horn.png" alt="" width="128" height="128" loading="lazy">
-          <div><h3>Fan horn</h3><p>Blasts zombies away from the house.</p></div>
-        </article>
-        <article class="t reveal">
-          <img src="img/tools/powergrab.png" alt="" width="128" height="128" loading="lazy">
-          <div><h3>Power grab</h3><p>Grabs heavy zombies, and several at once with one touch.</p></div>
-        </article>
+      <div class="grid arsenal reveal" data-show="all">
+        <details class="t" data-g="guns"><summary><img src="img/tools/gun.png" alt="" width="128" height="128" loading="lazy"><b>Handgun</b></summary><div class="td"><p>The trusty handgun.</p></div></details>
+        <details class="t" data-g="guns"><summary><img src="img/tools/shotgun.png" alt="" width="128" height="128" loading="lazy"><b>Shotgun</b></summary><div class="td"><p>It doesn't aim, it sweeps. Everything in front gets hit.</p></div></details>
+        <details class="t" data-g="guns"><summary><img src="img/tools/sniper.png" alt="" width="128" height="128" loading="lazy"><b>Sniper rifle</b></summary><div class="td"><p>Perfect aim with a deadly hit.</p></div></details>
+        <details class="t" data-g="guns"><summary><img src="img/tools/peacemaker.png" alt="" width="128" height="128" loading="lazy"><b>Peacemaker</b></summary><div class="td"><p>Bringing peace, one shot at a time.</p></div></details>
+        <details class="t" data-g="guns"><summary><img src="img/tools/gatling.png" alt="" width="128" height="128" loading="lazy"><b>Gatling gun</b></summary><div class="td"><p>Nothing more needs to be said.</p></div></details>
+        <details class="t" data-g="guns"><summary><img src="img/tools/rocketlauncher.png" alt="" width="128" height="128" loading="lazy"><b>Rocket launcher</b></summary><div class="td"><p>Two worlds in one: a gun that fires explosives.</p></div></details>
+        <details class="t" data-g="boom"><summary><img src="img/tools/mine.png" alt="" width="128" height="128" loading="lazy"><b>Landmine</b></summary><div class="td"><p>Lays a deadly minefield.</p></div></details>
+        <details class="t" data-g="boom"><summary><img src="img/tools/grenade.png" alt="" width="128" height="128" loading="lazy"><b>Hand grenade</b></summary><div class="td"><p>For explosions exactly where you want them.</p></div></details>
+        <details class="t" data-g="boom"><summary><img src="img/tools/nitrogen.png" alt="" width="128" height="128" loading="lazy"><b>Liquid nitrogen</b></summary><div class="td"><p>Freezes zombies solid and makes them shatter like glass.</p></div></details>
+        <details class="t" data-g="boom"><summary><img src="img/tools/firegrenade.png" alt="" width="128" height="128" loading="lazy"><b>Fire grenade</b></summary><div class="td"><p>Blows up and leaves the ground burning.</p></div></details>
+        <details class="t" data-g="boom"><summary><img src="img/tools/rockets.png" alt="" width="128" height="128" loading="lazy"><b>Fireworks</b></summary><div class="td"><p>Any night is a good night for zombie fireworks.</p></div></details>
+        <details class="t" data-g="boom"><summary><img src="img/tools/headbang.png" alt="" width="128" height="128" loading="lazy"><b>Head Bang</b></summary><div class="td"><p>How far can a zombie head stretch before it pops?</p></div></details>
+        <details class="t" data-g="boom"><summary><img src="img/tools/chimneyfire.png" alt="" width="128" height="128" loading="lazy"><b>Chimney fire</b></summary><div class="td"><p>Light them up! A burning zombie makes specials show up more often.</p></div></details>
+        <details class="t" data-g="sky"><summary><img src="img/tools/rocks.png" alt="" width="128" height="128" loading="lazy"><b>Rocks</b></summary><div class="td"><p>Buries zombies under a pile of rocks.</p></div></details>
+        <details class="t" data-g="sky"><summary><img src="img/tools/metalcore.png" alt="" width="128" height="128" loading="lazy"><b>Concrete block</b></summary><div class="td"><p>Clears the space in front of the house when a zombie gets too close.</p></div></details>
+        <details class="t" data-g="sky"><summary><img src="img/tools/wreckingball.png" alt="" width="128" height="128" loading="lazy"><b>Wrecking ball</b></summary><div class="td"><p>Great for knocking things down. Zombies most of all.</p></div></details>
+        <details class="t" data-g="sky"><summary><img src="img/tools/wreckingshoe.png" alt="" width="128" height="128" loading="lazy"><b>Wrecking shoe</b></summary><div class="td"><p>A penalty kick that really hurts! This boot prefers zombies to balls!</p></div></details>
+        <details class="t" data-g="sky"><summary><img src="img/tools/stoneball.png" alt="" width="128" height="128" loading="lazy"><b>Giant boulder</b></summary><div class="td"><p>The bigger the better. Rolls over anything in its path.</p></div></details>
+        <details class="t" data-g="sky"><summary><img src="img/tools/bigball.png" alt="" width="128" height="128" loading="lazy"><b>Big football</b></summary><div class="td"><p>A huge ball that flattens zombies.</p></div></details>
+        <details class="t" data-g="sky"><summary><img src="img/tools/windmill.png" alt="" width="128" height="128" loading="lazy"><b>Windmill</b></summary><div class="td"><p>Turns the windmill into a spinning blade. Zombies get sliced!</p></div></details>
+        <details class="t" data-g="sky"><summary><img src="img/tools/meteor_small.png" alt="" width="128" height="128" loading="lazy"><b>Meteorites</b></summary><div class="td"><p>Help from the sky. Pours fire on zombies.</p></div></details>
+        <details class="t" data-g="sky"><summary><img src="img/tools/meteor.png" alt="" width="128" height="128" loading="lazy"><b>Asteroid</b></summary><div class="td"><p>Ask the dinosaurs how this one ends. The zombies are next.</p></div></details>
+        <details class="t" data-g="gravity"><summary><img src="img/tools/gravitylow.png" alt="" width="128" height="128" loading="lazy"><b>Low gravity</b></summary><div class="td"><p>Turns gravity down. Tip: in low gravity even the Tank can be grabbed.</p></div></details>
+        <details class="t" data-g="gravity"><summary><img src="img/tools/gravityhigh.png" alt="" width="128" height="128" loading="lazy"><b>High gravity</b></summary><div class="td"><p>Turns gravity up. Breaking bones gets easier.</p></div></details>
+        <details class="t" data-g="gravity"><summary><img src="img/tools/gravityanti.png" alt="" width="128" height="128" loading="lazy"><b>Zero gravity</b></summary><div class="td"><p>Zombies float like they're in space. Until they come down and their bones break.</p></div></details>
+        <details class="t" data-g="gravity"><summary><img src="img/tools/slowmo.png" alt="" width="128" height="128" loading="lazy"><b>Slow motion</b></summary><div class="td"><p>Slows time down so you can handle the trouble.</p></div></details>
+        <details class="t" data-g="tricks"><summary><img src="img/tools/whistle.png" alt="" width="128" height="128" loading="lazy"><b>Whistle</b></summary><div class="td"><p>Stops zombies in their tracks.</p></div></details>
+        <details class="t" data-g="tricks"><summary><img src="img/tools/horn.png" alt="" width="128" height="128" loading="lazy"><b>Fan horn</b></summary><div class="td"><p>Blasts zombies away from the house.</p></div></details>
+        <details class="t" data-g="tricks"><summary><img src="img/tools/powergrab.png" alt="" width="128" height="128" loading="lazy"><b>Power grab</b></summary><div class="td"><p>Grabs heavy zombies, and several at once with one touch.</p></div></details>
       </div>
       <div class="art art-purple lockedzone">
       <h3 class="subtitle">Secret rewards</h3>
@@ -331,7 +249,7 @@
       </p>
       <p><a href="privacy.html">Privacy Policy</a> <a href="credits.html">Credits</a> <a href="mailto:support@zomdrop.com" dir="ltr">support@zomdrop.com</a> <a href="https://qamarbit.com">Qamar Bit</a> <a href="ar/" lang="ar" hreflang="ar">العربية</a></p>
       <p>&copy; 2026 Qamar Bit. All rights reserved.</p>
-      <p class="ver">Site version 1.11</p>
+      <p class="ver">Site version 1.12</p>
     </footer>
   </div>
 
@@ -343,6 +261,24 @@
   document.documentElement.classList.add('js');
   if (location.hash) document.documentElement.classList.add('nodrop');
   requestAnimationFrame(function () { requestAnimationFrame(function () { document.documentElement.classList.add('go'); }); });
+  // tools: filter buttons, and only one tool open at a time
+  (function () {
+    var grid = document.querySelector('.arsenal'); if (!grid) return;
+    var chips = document.querySelectorAll('.chip');
+    chips.forEach(function (c) {
+      c.addEventListener('click', function () {
+        chips.forEach(function (x) { var on = x === c; x.classList.toggle('on', on); x.setAttribute('aria-pressed', on ? 'true' : 'false'); });
+        grid.setAttribute('data-show', c.getAttribute('data-g'));
+        grid.querySelectorAll('details[open]').forEach(function (d) { d.open = false; });
+        // a small hop only (no fading), so a tool can never be left invisible
+        if (window.gsap) gsap.fromTo(grid.querySelectorAll('.t'), { y: 8 }, { y: 0, duration: .3, stagger: .02, overwrite: true, clearProps: 'transform' });
+      });
+    });
+    grid.addEventListener('toggle', function (e) {
+      if (!e.target.open) return;
+      grid.querySelectorAll('details[open]').forEach(function (d) { if (d !== e.target) d.open = false; });
+    }, true);
+  })();
   (function () {
     if (!window.gsap || !window.ScrollTrigger) return;   // without GSAP the page simply shows everything
     gsap.registerPlugin(ScrollTrigger);
