@@ -6,7 +6,7 @@
   <title>ZomDrop — Grab them. Fling them. Survive until morning.</title>
   <meta name="description" content="ZomDrop is a mobile game by Qamar Bit. Grab zombies with your finger, fling them, drop them, and protect your house until morning. Coming soon on Google Play and the App Store.">
   <meta name="theme-color" content="#081320">
-  <meta name="version" content="1.17">
+  <meta name="version" content="1.18">
   <link rel="canonical" href="https://zomdrop.com/">
   <link rel="alternate" hreflang="en" href="https://zomdrop.com/">
   <link rel="alternate" hreflang="ar" href="https://zomdrop.com/ar/">
@@ -73,9 +73,10 @@
 
     <!-- ===== 2. Adam ===== -->
     <section id="story" class="block art art-gold">
-      <p class="label">Your host</p>
-      <h2 class="title">Radio Adam, 99.9 FM</h2>
-      <p class="sub">The only show still on air.</p>
+      <div class="wallhead wall-farm">
+        <picture><source media="(max-width: 700px)" srcset="img/wall/farm-tall.webp" width="800" height="1422"><img src="img/wall/farm-wide.webp" alt="" width="1600" height="800" loading="lazy" decoding="async"></picture>
+        <div class="wh-txt"><p class="label">Your host</p><h2 class="title">Radio Adam, 99.9 FM</h2><p class="sub">The only show still on air.</p></div>
+      </div>
       <article class="adam reveal">
         <div class="pic"><img src="img/cards/adam.webp" alt="Adam talking into his radio microphone and pointing at you" width="640" height="800"></div>
         <div class="txt">
@@ -91,10 +92,11 @@
     </section>
 
     <!-- ===== 2. Zombies ===== -->
-    <section id="horde" class="block art art-blue">
-      <p class="label">Zombie guide</p>
-      <h2 class="title">Meet the horde</h2>
-      <p class="sub">Every night brings someone new to your fence. Introduced by Adam, live on air.</p>
+    <section id="horde" class="block art art-horde">
+      <div class="wallhead wall-horde">
+        <picture><source media="(max-width: 700px)" srcset="img/wall/horde-tall.webp" width="800" height="1422"><img src="img/wall/horde-wide.webp" alt="" width="1600" height="800" loading="lazy" decoding="async"></picture>
+        <div class="wh-txt"><p class="label">Zombie guide</p><h2 class="title">Meet the horde</h2><p class="sub">Every night brings someone new to your fence. Introduced by Adam, live on air.</p></div>
+      </div>
       <div class="grid horde">
         <article class="z reveal">
           <div class="pic"><img src="img/cards/harvey.webp" alt="Uncle Harvey, a zombie farmer with messy brown hair, reaching forward" width="640" height="800" loading="lazy"></div>
@@ -249,7 +251,7 @@
       </p>
       <p><a href="privacy.html">Privacy Policy</a> <a href="credits.html">Credits</a> <a href="mailto:support@zomdrop.com" dir="ltr">support@zomdrop.com</a> <a href="https://qamarbit.com">Qamar Bit</a> <a href="ar/" lang="ar" hreflang="ar">العربية</a></p>
       <p>&copy; 2026 Qamar Bit. All rights reserved.</p>
-      <p class="ver">Site version 1.17</p>
+      <p class="ver">Site version 1.18</p>
     </footer>
   </div>
 
@@ -286,6 +288,14 @@
     // the picture drifts slower than the page while scrolling
     gsap.to('.scene-inner', { yPercent: 14, ease: 'none',
       scrollTrigger: { trigger: '.scene', start: 'top top', end: 'bottom top', scrub: true } });
+
+    // comic-wall bands: the picture drifts a little while scrolling (off when the visitor asks for less motion)
+    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      gsap.utils.toArray('.wallhead img').forEach(function (img) {
+        gsap.fromTo(img, { yPercent: -7 }, { yPercent: 7, ease: 'none',
+          scrollTrigger: { trigger: img.closest('.wallhead'), start: 'top bottom', end: 'bottom top', scrub: true } });
+      });
+    }
 
     // cards rise in, a few at a time, when they enter the screen
     gsap.set('.reveal', { opacity: 0, y: 26 });

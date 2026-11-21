@@ -6,7 +6,7 @@
   <title>زوم دروب — أمسكهم. اقذفهم. اصمد حتى الصباح.</title>
   <meta name="description" content="زوم دروب لعبة جوال من استوديو قمر بت. أمسك الزومبي بإصبعك، اقذفهم، أسقطهم، واحمِ بيتك حتى الصباح. قريباً على Google Play و App Store.">
   <meta name="theme-color" content="#081320">
-  <meta name="version" content="1.17">
+  <meta name="version" content="1.18">
   <link rel="canonical" href="https://zomdrop.com/ar/">
   <link rel="alternate" hreflang="en" href="https://zomdrop.com/">
   <link rel="alternate" hreflang="ar" href="https://zomdrop.com/ar/">
@@ -73,9 +73,10 @@
 
     <!-- ===== 2. Adam ===== -->
     <section id="story" class="block art art-gold">
-      <p class="label">مذيعك</p>
-      <h2 class="title">راديو آدم، 99.9 FM</h2>
-      <p class="sub">البرنامج الوحيد الذي ما زال على الهواء.</p>
+      <div class="wallhead wall-farm">
+        <picture><source media="(max-width: 700px)" srcset="../img/wall/farm-tall.webp" width="800" height="1422"><img src="../img/wall/farm-wide.webp" alt="" width="1600" height="800" loading="lazy" decoding="async"></picture>
+        <div class="wh-txt"><p class="label">مذيعك</p><h2 class="title">راديو آدم، 99.9 FM</h2><p class="sub">البرنامج الوحيد الذي ما زال على الهواء.</p></div>
+      </div>
       <article class="adam reveal">
         <div class="pic"><img src="../img/cards/adam.webp" alt="آدم يتكلم في ميكروفون الراديو ويشير بإصبعه نحوك" width="640" height="800"></div>
         <div class="txt">
@@ -91,10 +92,11 @@
     </section>
 
     <!-- ===== 2. Zombies ===== -->
-    <section id="horde" class="block art art-blue">
-      <p class="label">دليل الزومبي</p>
-      <h2 class="title">تعرّف على القطيع</h2>
-      <p class="sub">كل ليلة يصل ضيف جديد إلى سياجك. يقدّمهم آدم على الهواء.</p>
+    <section id="horde" class="block art art-horde">
+      <div class="wallhead wall-horde">
+        <picture><source media="(max-width: 700px)" srcset="../img/wall/horde-tall.webp" width="800" height="1422"><img src="../img/wall/horde-wide.webp" alt="" width="1600" height="800" loading="lazy" decoding="async"></picture>
+        <div class="wh-txt"><p class="label">دليل الزومبي</p><h2 class="title">تعرّف على القطيع</h2><p class="sub">كل ليلة يصل ضيف جديد إلى سياجك. يقدّمهم آدم على الهواء.</p></div>
+      </div>
       <div class="grid horde">
         <article class="z reveal">
           <div class="pic"><img src="../img/cards/harvey.webp" alt="عم زرعة، زومبي فلاح بشعر بني منكوش يمد ذراعيه" width="640" height="800" loading="lazy"></div>
@@ -249,7 +251,7 @@
       </p>
       <p><a href="../privacy.html">سياسة الخصوصية</a> <a href="../credits.html">الشكر والتراخيص</a> <a href="mailto:support@zomdrop.com" dir="ltr">support@zomdrop.com</a> <a href="https://qamarbit.com">Qamar Bit</a> <a href="../" lang="en" hreflang="en">English</a></p>
       <p>&copy; 2026 Qamar Bit. جميع الحقوق محفوظة.</p>
-      <p class="ver">إصدار الموقع 1.17</p>
+      <p class="ver">إصدار الموقع 1.18</p>
     </footer>
   </div>
 
@@ -286,6 +288,14 @@
     // the picture drifts slower than the page while scrolling
     gsap.to('.scene-inner', { yPercent: 14, ease: 'none',
       scrollTrigger: { trigger: '.scene', start: 'top top', end: 'bottom top', scrub: true } });
+
+    // comic-wall bands: the picture drifts a little while scrolling (off when the visitor asks for less motion)
+    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      gsap.utils.toArray('.wallhead img').forEach(function (img) {
+        gsap.fromTo(img, { yPercent: -7 }, { yPercent: 7, ease: 'none',
+          scrollTrigger: { trigger: img.closest('.wallhead'), start: 'top bottom', end: 'bottom top', scrub: true } });
+      });
+    }
 
     // cards rise in, a few at a time, when they enter the screen
     gsap.set('.reveal', { opacity: 0, y: 26 });
